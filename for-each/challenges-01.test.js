@@ -143,19 +143,20 @@ Iterate over the array using forEach to determine the output based on several ru
 Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
-const fizzbuzz = (arr,i) => {
-  arr.forEach((inputs)=>{
-    if(inputs % 15 === 0){
-      arr.push('Fizz Buzz');
-    }else if(inputs % 3 === 0){
-      arr.push('Fizz');
-    }else if(inputs % 5 === 0){
-      arr.push('Buzz');
+const fizzbuzz = (arr) => {
+  var empty = [];
+  arr.forEach((value)=>{
+    if(value % 15 === 0){
+      empty.push('Fizz Buzz');
+    }else if(value % 3 === 0){
+      empty.push('Fizz');
+    }else if(value % 5 === 0){
+      empty.push('Buzz');
     }else{
-      arr.push(i);
+      empty.push(value);
     }
   });
-  return arr;
+  return empty;
 };
 
 /* ------------------------------------------------------------------------------------------------
