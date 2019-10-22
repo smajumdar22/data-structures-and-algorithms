@@ -31,7 +31,7 @@ Within the addNumbers function, invoke the callback function as many times as ne
 
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
-var arr = [];
+
 const addValues = ( arr, value) => {
 
   arr.push(value);
@@ -39,9 +39,9 @@ const addValues = ( arr, value) => {
 
 const addNumbers = (num, arr, times, callback) => {
   for (var i=0; i<times ; i++){
-    arr.push(num);
+    callback(arr,num);
   }
-  return callback(num,arr,times,addValues);
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -57,14 +57,15 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const removeOne = (num, arr) => {
-  if((num%3)===2){
+  if(num%3 === 2){
     arr.pop();
   }
 };
 
 const removeElements = (arr, callback) => {
-  var i =0
-  arr.forEach(callback, i)
+  for (var i=0 ; i< arr.length ; i++){
+    callback(arr[i],arr );
+  }
 
   return arr;
 };
@@ -76,12 +77,10 @@ Write a function named removeWithForEach that produces the same output as challe
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithForEach = (arr, callback) => {
-  // Solution code here...
-  arr.forEach(callback,i){
-    arr.pop(i);
-    
-    return arr;
-  }
+  arr.forEach((value) => {
+    callback(value,arr);
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
