@@ -94,7 +94,12 @@ This anonymous function should accept up to three arguments: the element, the in
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithAnon = (arr) => {
-  // Solution code here...
+  arr.forEach(function(element,index,array){
+    if(element %3 === 2){
+      array.pop();
+    }
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -115,7 +120,13 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  let newList = [];
+  availableItems.forEach(function(value, index){
+    if(value.available === true){
+      newList.push(value.name);
+    }
+  });
+  return newList;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -132,8 +143,19 @@ Iterate over the array using forEach to determine the output based on several ru
 Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
-const fizzbuzz = (arr) => {
-  // Solution code here...
+const fizzbuzz = (arr,i) => {
+  arr.forEach((inputs)=>{
+    if(inputs % 15 === 0){
+      arr.push('Fizz Buzz');
+    }else if(inputs % 3 === 0){
+      arr.push('Fizz');
+    }else if(inputs % 5 === 0){
+      arr.push('Buzz');
+    }else{
+      arr.push(i);
+    }
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
