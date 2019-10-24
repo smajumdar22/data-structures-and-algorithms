@@ -9,8 +9,8 @@ Write a function that appends ' The end.' to a string, and returns the modified 
 ------------------------------------------------------------------------------------------------ */
 
 const appendTheEnd = (str) => {
-  let testString = str;
-  testString = `${testString} The end.`;
+  let testString = str + ' The end.';
+//   testString = `${testString} The end.`;
   return testString;
 };
 
