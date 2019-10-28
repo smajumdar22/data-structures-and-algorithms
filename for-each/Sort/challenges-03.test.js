@@ -11,6 +11,7 @@ const sortBackwards = (arr) => {
     return b-a;
   })
   return sortArray;
+  //return arr.sort((a,b)=> b-a);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -29,6 +30,8 @@ const alphabetize = (arr) => {
   })
   return sortArray;
 };
+
+//return arr.sort();
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -62,6 +65,7 @@ const alphabetizeBetter = (arr) => {
   return sortArray;
 };
 
+//return arr.sort((a,b))
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -77,6 +81,8 @@ Here is an example of the input:
 
 const sortByPrice = (arr) => {
   // Solution code here...
+
+  return arr.sort((a,b) => a.price > b.price);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -93,10 +99,12 @@ const sortNumbersByLength = (arr) => {
     element = element.toString();
   })
   const sortArray = arr.sort((a,b) =>{
-    return b.length-a.length;
+    return a.length-b.length;
+
   })
-  return sortArray;
+  return sortArray
 };
+
 
 /*-----------------------------------------------------------------------------------------------
 CHALLENGE 7
@@ -118,7 +126,9 @@ const people = [
 
 const sortPeople = (arr) => {
   // Solution code here...
-};
+
+  return arr.sort((a,b) => a.lastName > b.lastName);
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8
@@ -132,7 +142,8 @@ If two people have the same full name, the younger one should come first. Do not
 
 const sortPeopleBetter = (arr) => {
   // Solution code here...
-};
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
@@ -158,6 +169,23 @@ const meetings = [
 
 const sortMeetingsByDay = (arr) => {
   // Solution code here...
+
+  const weekDays = ['Monday','Tuesday','Wednesday','Thursday','Friday'];
+
+  arr = arr.sort((a,b) =>{
+
+    let x,y;
+    weekDays.forEach((day,index) =>{
+      if(day == a.dayOfWeek){
+        x= index;
+      }
+      if (day == b.dayOfWeek){
+        y=index;
+      }
+    })
+    return x>y;
+  });
+return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -172,6 +200,32 @@ You DO NOT need to use your solution to Challenge 9 in completing Challenge 10.
 
 const sortSchedule = (arr) => {
   // Solution code here...
+
+  const weekDays = ['Monday','Tuesday','Wednesday','Thursday','Friday'];
+
+  arr = arr.sort((a,b) =>{
+
+    let x,y;
+    weekDays.forEach((day,index) =>{
+      if(day == a.dayOfWeek){
+        x= index;
+      }
+      if (day == b.dayOfWeek){
+        y=index;
+      }
+    })
+    if (x>y){
+        return 1;
+    }
+    else if(x<y){
+      retyrn -1;
+    }
+    else {
+      if (a.start >b.start){
+return 1;
+    }
+  });
+return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
