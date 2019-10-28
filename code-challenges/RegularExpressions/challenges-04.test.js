@@ -87,9 +87,14 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 
 const noPunctuation = str => {
   // Solution code here...
+
+  let validator = /\w+\s/g;
+
+  return validator.match(str);
 };
 
-/* ------------------------------------------------------------------------------------------------
+/* 
+------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
 You want to teach a friend how to play hangman and want to show them using a partially complete puzzle.
@@ -102,7 +107,9 @@ For example, 'Welcome to Code 301!' will return 'W_lc_m_ t_ C_d_ 301!'.
 ------------------------------------------------------------------------------------------------ */
 
 let hangman = (str) => {
-  // Solution code here...
+  let validator = /[aeiou]/gi;
+
+  return validator.replace(str);
 };
 
 /* ------------------------------------------------------------------------------------------------
