@@ -27,18 +27,7 @@ Write a function named isCapitalized that takes in a string. This function shoul
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
-const isCapitalized = (str) => {
-  // Solution code here...
-  let validator = /[A-Z]\w+/g;
-  let testArr= [];
-
-  let regex = validator.match(str) ? testArr.push(regex) : null;
-
-  return testArr;
-
-
-};
-
+const isCapitalized = (str) => str.match(/[A-Z]\w+/g) || [];
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -46,15 +35,16 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
-
-  let validator = /[A-J]\w+/g;
-  let testArr= [];
-
-  let regex = validator.match(arr) ? testArr.push(regex) : null;
-
-  return testArr;
+  let newArr = [];
+  let regex = /^\b[A-J]\w*/g;
+  arr.forEach(element => {
+    if(element.match(regex)){
+      newArr.push(element);
+    }
+  })
+  return newArr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -69,10 +59,7 @@ Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
 
 const matchMonth = (input) => {
-  // Solution code here...
-
-  let validator = /^[Oo](ct\b|ctober)/;
-  return validator.test(input);
+  return input.toString().match(/^[Oo]ct(ober)?$/);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -86,11 +73,12 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 ------------------------------------------------------------------------------------------------ */
 
 const noPunctuation = str => {
-  // Solution code here...
-
-  let validator = /\w+\s/g;
-
-  return validator.match(str);
+  let validator = /(\w+\s)/g
+  if (str.match(validator)) {
+    return str.match(validator)
+  } else {
+    return[]
+  }
 };
 
 /* 
@@ -107,11 +95,13 @@ For example, 'Welcome to Code 301!' will return 'W_lc_m_ t_ C_d_ 301!'.
 ------------------------------------------------------------------------------------------------ */
 
 let hangman = (str) => {
-  let validator = /[aeiou]/gi;
-
-  return validator.replace(str);
+  let regex = /a|e|i|o|u/gi;
+  if (str.match(regex)) {
+    return str.replace(regex, '_');
+  } else {
+    return[]
+  }
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
@@ -126,6 +116,10 @@ const seashells = 'She sells seashells by the seashore. The shells she sells are
 
 const findShells = (str) => {
   // Solution code here...
+
+  let validator = /(sea)?(s)(h)?(ells)/ig;
+  return str.match(validator);
+  // \b()
 };
 
 /* ------------------------------------------------------------------------------------------------
