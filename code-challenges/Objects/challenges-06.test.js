@@ -133,6 +133,22 @@ Write a function named totalCharacters that takes in an array and returns the nu
 
 const totalCharacters = (arr) => {
   // Solution code here...
+  let counter = 0;
+  arr.forEach(element => {   
+    if(element.name){
+      counter++;
+    }
+    if(element.spouse){
+      counter++;
+    }
+    if(element.children){
+      counter ++;
+    }
+    if(element.house){
+      counter ++;
+    }
+  });
+  return counter;
 };
 
 /* ------------------------------------------------------------------------------------------------
