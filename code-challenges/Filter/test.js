@@ -44,10 +44,10 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
-  // Solution code here...
+  // Solution code here... 
   return arr.filter(element => {
     return !forbiddenValues.includes(element)
-  });
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -91,9 +91,9 @@ const snorlaxData = {
 
 const getBaseStatGreaterThan = (arr, minBaseStat) => {
   // Solution code here...
-  return arr.filter(element => {
+   return arr.filter(element => {
     return element.baseStat > minBaseStat;
-  });
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -106,12 +106,11 @@ For example, getStatName(snorlaxData.stats, 50) will return ['special-defense', 
 
 const getStatName = (arr, minBaseStat) => {
   // Solution code here...
-  return arr.filter(element => {
+   return arr.filter(element => {
     return element.baseStat > minBaseStat;
-  }).map(value => {
-    return value.stat.name;
-  })
-};
+  }).map(element2 => {
+    return element2.stat.name;
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -164,7 +163,7 @@ const characters = [
 
 const getCharactersWithoutChildren = (arr) => {
   // Solution code here...
-  return arr.filter(element => {
+     return arr.filter(element => {
     return !element.children;
   })
 };
