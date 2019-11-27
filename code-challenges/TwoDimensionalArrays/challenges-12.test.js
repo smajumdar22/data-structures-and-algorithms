@@ -1,6 +1,7 @@
 'use strict';
 
 import { valueToNode } from "@babel/types";
+import { getConsoleOutput } from "@jest/console";
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
@@ -51,8 +52,12 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   // Solution code here...
-};
+  
+  hours.map((hour,idx)=> {
+    return {sales: `${data[idx]} cookies`, time: hour};
 
+  }
+  )};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
