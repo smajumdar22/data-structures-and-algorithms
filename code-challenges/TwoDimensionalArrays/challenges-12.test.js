@@ -1,8 +1,5 @@
 'use strict';
 
-import { valueToNode } from "@babel/types";
-import { getConsoleOutput } from "@jest/console";
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
@@ -26,18 +23,15 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  // Solution code here...
-  let hourlySales = new Array(cookieStores.length).fill(0);
-
-  for(let i=0; i<= cookieStores.length -1;i++){
-      for(let j=0; j<=cookieStores[i].length -1; j++){
-
-        let value = table[i][j];
-          hourlySales[j] += value;
-      }
-      return hourlySales;
+  let result = [];
+  for (let i = 0; i < hoursOpen.length; i++) {
+    let totalCookies = 0;
+    for (let j = 0; j < stores.length; j++) {
+      totalCookies += stores[j][i];
+    }
+    result.push(totalCookies);
   }
-
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -51,13 +45,13 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  // Solution code here...
-  
-  hours.map((hour,idx)=> {
-    return {sales: `${data[idx]} cookies`, time: hour};
+  const result = [];
+  hours.forEach( (hour, idx) => {
+    result.push({sales: `${data[idx]} cookies`, time: hour});
+  });
+  return result;
+};
 
-  }
-  )};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -77,7 +71,8 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
+  let petStore = arr.filter(el => el.store === 'Pet store')[0].items;
+  return petStore.filter(item => item.name === 'Treats')[0].quantity;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -98,9 +93,7 @@ Here is a sample board:
 The top row of the board is considered row zero and row numbers increase as they go down.
 ------------------------------------------------------------------------------------------------ */
 
-const battleship = (board, row, col) => {
-  //  Solution code here...
-};
+const battleship = (board, row, col) => board[row][col] === '#' ? 'hit' : 'miss';
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -112,6 +105,13 @@ For example, the following input returns a product of 720: [[1,2], [3,4], [5,6]]
 
 const calculateProduct = (numbers) => {
   // Solution code here...
+  let productTotal= 1;
+  numbers.forEach( value => {
+    for(let i = 0; i < value.length; i++){
+      productTotal *= value[i];
+    }
+  });
+  return productTotal;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -131,9 +131,16 @@ const weeklyTemperatures = [
 ];
 
 const averageDailyTemperature = (weather) => {
-  // Solution code here...
-};
+  let count = 0, total = 0;
 
+  weather.forEach ( arr => {
+    arr.forEach ( num => {
+      total+= num;
+      count ++;
+    })
+  })
+  return total/count;
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7
 
@@ -153,6 +160,17 @@ let lowestWeeklyTemperatureData = [
 
 const lowestWeeklyAverage = (weather) => {
   // Solution code here...
+  let averageTemperature= [];
+
+  weather.forEach( week => {
+    let weekTotal = 0;
+    for(let day in week){
+      weekTotal += week[day];
+      day += 1;
+    }
+    averageTemperature.push(weekTotal/7);
+  });
+  return Math.min(...averageTemperature);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -169,6 +187,18 @@ For example, excel('1,1,1\n4,4,4\n9,9,9') returns [3, 12, 27].
 
 const excel = (str) => {
   // Solution code here...
+  let newRows = str.split('\n');
+  let result = [];
+  newRows.forEach( row =>{
+    let result = 0;
+    row = row.split(',');
+
+    for(let number in row){
+      result += parseInt(row[number]);
+    }
+    result.push(result);
+  });
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
