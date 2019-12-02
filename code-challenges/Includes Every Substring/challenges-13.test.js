@@ -28,6 +28,8 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 const findHappiness = (arr) => arr.filter( str => str.includes(':)') );
 
 
+
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -38,6 +40,14 @@ For example, (123) 456-7890 returns 1234567890
 
 const standardizePhoneNumbers = (arr) => {
   // Solution code here...
+  let result = [];
+  arr.forEach(value=>{
+    let first= value.substring(1,4);
+    let second = value.substring(6,9);
+    let third = value.substring(10,14);
+    result.push(first+second+third);
+  });
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -50,6 +60,15 @@ For example, 'abcdefg' returns 'bdf'
 
 const onlyOddChars = (str) => {
   // Solution code here...
+
+  let output = '';
+  let arr = str.split('');
+  arr.forEach((element,index)=> {
+    if(index % 2 !== 0){
+      output += element;
+    }
+  });
+  return output;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -60,6 +79,14 @@ Write a function named allHappy that takes in an array of strings and returns a 
 
 const allHappy = (arr) => {
   // Solution code here...
+  let result = [];
+  arr.forEach(element => element.includes(':)') ? result.push(true) : result.push(false));
+  for(let i=0;i<output.length;i++){
+    if(result[i] === false){
+      return false;
+    }
+  }
+  return true;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -70,6 +97,8 @@ Write a function named findAnything that takes in an array of strings, along wit
 
 const findAnything = (arr, target) => {
   // Solution code here...
+
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
