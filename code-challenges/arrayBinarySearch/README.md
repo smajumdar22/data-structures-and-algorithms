@@ -1,4 +1,4 @@
-# Code Challenge: Class 03
+# Code Challenge: Class 04
 
 ## Array Binary Search
 
