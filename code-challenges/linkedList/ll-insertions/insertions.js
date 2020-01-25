@@ -112,7 +112,6 @@ insertBefore(value,newValue){
   
   })  
 
->>>>>>> Stashed changes
   
   
   
