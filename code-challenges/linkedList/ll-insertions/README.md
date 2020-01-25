@@ -5,7 +5,7 @@
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/401-advanced-javascript-Shubham/Lab01/pull/1)
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/33)
 
 # Challenge Summary
 Write the following methods for the Linked List class:
