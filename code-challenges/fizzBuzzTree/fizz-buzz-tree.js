@@ -14,6 +14,8 @@ const fizzbuzzTree = (root) => {
       root.value = 'fizz';
     } else if (root.value % 5 === 0){
       root.value = 'buzz';
+    }else {
+        root.value = root.value.toString();
     }
   }
 
