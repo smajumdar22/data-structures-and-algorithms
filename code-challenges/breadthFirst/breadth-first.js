@@ -11,7 +11,7 @@ const breadthFirst = (root, arr) => {
     let current = queue.shift();
 
     console.log(current.value);
-    arr.push(current.value); // H'Liana - for testing
+    arr.push(current.value);
     if(current.left) queue.push(current.left);
     if(current.right) queue.push(current.right)
   }
