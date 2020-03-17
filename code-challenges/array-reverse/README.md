@@ -5,7 +5,7 @@
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/401-advanced-javascript-Shubham/Lab01/pull/1)
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/48)
 
 # Challenge Summary
 Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
