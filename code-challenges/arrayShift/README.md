@@ -1,11 +1,11 @@
 # Code Challenge: Class 02
 
-## Array Reverse
+## Array Shift
 
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/401-advanced-javascript-Shubham/Lab01/pull/1)
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/49)
 
 # Challenge Summary
 Write a function called insertShiftArray which takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
