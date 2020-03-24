@@ -16,3 +16,12 @@ describe('Arrayshift even', () => {
       expect(arr.arrayshift(arr,element)).toEqual( [4,8,15,16,23,42]);
     });
   });
+
+  describe('Arrayshift failure', () => {
+    test('It add the element to the middle of an even array', () => {
+      let notArr = 3;
+      let element = 16;
+      expect(arr.arrayshift(notArr,element)).toThrow(err);
+    });
+  });
+
