@@ -5,7 +5,7 @@
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/50)
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/51)
 
 # Challenge Summary
  Write a function to add up the sum of each row in a matrix of arbitrary size, and return an array with the appropriate values.
