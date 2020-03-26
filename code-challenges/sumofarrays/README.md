@@ -1,6 +1,6 @@
 # Code Challenge: Interview 1
 
-## Array Binary Search
+## Sum of each row of a matrix
 
 ### Author: Shubham Majumdar
 
