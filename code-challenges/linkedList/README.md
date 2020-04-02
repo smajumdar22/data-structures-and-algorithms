@@ -5,7 +5,8 @@
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/32)
+
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/52)
 
 # Challenge Summary
 Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
