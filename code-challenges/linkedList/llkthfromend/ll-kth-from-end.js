@@ -1,14 +1,11 @@
 
+'use strict';
 
-class Node{
-    constructor(element){
-      this.value = element;
-      this.next = null;
-    }
-  }
+const Linkedlist = require('../linked-list.js');
   
-    class LinkedList{
+    class LLKthFromEnd extends Linkedlist{
       constructor(){
+        super();
         this.head = null;
       }
       llKthFromEnd(element){
@@ -30,5 +27,7 @@ class Node{
         
       }
     }
+
+    module.exports=LLKthFromEnd;
   
     
