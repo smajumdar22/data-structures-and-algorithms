@@ -1,26 +1,29 @@
 'use strict';
 
-function Node(value) {
-    this.value = value;
-    this.next = null;
-  }
+const LinkedList = require('./lib/linkedlist.js')
+
   
-  function LinkedList() {
-    this._length = 0;
-    this.head = null;
-  }
-  
-  LinkedList.prototype.add = function(value) {
-    let node = new Node(value);
-    let currentNode = this.head;
-  
-    if (!currentNode) this.head = node;
-    else {
-      while (currentNode.next) currentNode = currentNode.next;
+  const llmerge =(l1, l2) => {
+    //let newLinkedlist = new LinkedList();
+
+    if(!l1 || l1.head) return l2;
+    if(!l2 || l2.head) return l1;
+
+    let l1head = l1.head;
+    let l2head = l2.head;
+
+    while (l1head && l2head) {
+      let current = l1head.next;
+      l1head.next = l2head;
+      l2head = current;
+      l1head = l1head.next;
     }
-  
-    currentNode.next = node;
-    this._length++;
-    return node;
+
+    if(l2head) {
+      l1head.next = l2head
+    }
+    
+    return l1;
   };
   
+module.exports = llmerge;
