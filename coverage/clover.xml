@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1586587925209" clover="3.2.0">
-  <project timestamp="1586587925209" name="All files">
-    <metrics statements="46" coveredstatements="35" conditionals="18" coveredconditionals="9" methods="7" coveredmethods="7" elements="71" coveredelements="51" complexity="0" loc="46" ncloc="46" packages="2" files="2" classes="2"/>
+<coverage generated="1586634235781" clover="3.2.0">
+  <project timestamp="1586634235781" name="All files">
+    <metrics statements="55" coveredstatements="43" conditionals="18" coveredconditionals="6" methods="8" coveredmethods="7" elements="81" coveredelements="56" complexity="0" loc="55" ncloc="55" packages="2" files="3" classes="3"/>
     <package name="llMerge">
-      <metrics statements="15" coveredstatements="4" conditionals="12" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <metrics statements="15" coveredstatements="3" conditionals="12" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="ll-merge.js" path="/mnt/c/users/shmaj/CodeFellows/401/401labs/data-structures-and-algorithms/code-challenges/llMerge/ll-merge.js">
-        <metrics statements="15" coveredstatements="4" conditionals="12" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <metrics statements="15" coveredstatements="3" conditionals="12" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="3" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="9" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="10" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
@@ -20,23 +20,23 @@
         <line num="22" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="23" count="0" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
       </file>
     </package>
     <package name="llMerge.lib">
-      <metrics statements="31" coveredstatements="31" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
+      <metrics statements="40" coveredstatements="40" conditionals="6" coveredconditionals="6" methods="7" coveredmethods="7"/>
       <file name="linkedlist.js" path="/mnt/c/users/shmaj/CodeFellows/401/401labs/data-structures-and-algorithms/code-challenges/llMerge/lib/linkedlist.js">
         <metrics statements="31" coveredstatements="31" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
-        <line num="4" count="30" type="stmt"/>
-        <line num="5" count="30" type="stmt"/>
-        <line num="12" count="11" type="stmt"/>
-        <line num="13" count="11" type="stmt"/>
-        <line num="18" count="21" type="cond" truecount="2" falsecount="0"/>
-        <line num="19" count="6" type="stmt"/>
-        <line num="21" count="15" type="stmt"/>
-        <line num="22" count="15" type="stmt"/>
-        <line num="23" count="15" type="stmt"/>
-        <line num="25" count="21" type="stmt"/>
+        <line num="4" count="28" type="stmt"/>
+        <line num="5" count="28" type="stmt"/>
+        <line num="12" count="9" type="stmt"/>
+        <line num="13" count="9" type="stmt"/>
+        <line num="18" count="19" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="21" count="14" type="stmt"/>
+        <line num="22" count="14" type="stmt"/>
+        <line num="23" count="14" type="stmt"/>
+        <line num="25" count="19" type="stmt"/>
         <line num="30" count="9" type="cond" truecount="2" falsecount="0"/>
         <line num="31" count="2" type="stmt"/>
         <line num="33" count="7" type="stmt"/>
@@ -51,13 +51,25 @@
         <line num="48" count="3" type="stmt"/>
         <line num="51" count="10" type="stmt"/>
         <line num="53" count="1" type="stmt"/>
-        <line num="58" count="1" type="stmt"/>
-        <line num="59" count="1" type="stmt"/>
-        <line num="61" count="1" type="stmt"/>
-        <line num="63" count="4" type="stmt"/>
-        <line num="64" count="4" type="stmt"/>
-        <line num="66" count="1" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="61" count="2" type="stmt"/>
+        <line num="63" count="8" type="stmt"/>
+        <line num="64" count="8" type="stmt"/>
+        <line num="66" count="2" type="stmt"/>
         <line num="71" count="1" type="stmt"/>
+      </file>
+      <file name="llreverse.js" path="/mnt/c/users/shmaj/CodeFellows/401/401labs/data-structures-and-algorithms/code-challenges/llMerge/lib/llreverse.js">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
       </file>
     </package>
   </project>

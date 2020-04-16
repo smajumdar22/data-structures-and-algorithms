@@ -23,7 +23,8 @@ const LinkedList = require('./lib/linkedlist.js')
       l1head.next = l2head
     }
     
-    return l1;
+    return l2;
   };
+
   
 module.exports = llmerge;
