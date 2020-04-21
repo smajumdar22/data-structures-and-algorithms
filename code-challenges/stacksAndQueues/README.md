@@ -1,4 +1,4 @@
-# Code Challenge: Class 10
+# Lab 11
 
 ## Stacks and Queues
 
