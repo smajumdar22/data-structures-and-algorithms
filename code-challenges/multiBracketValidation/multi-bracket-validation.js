@@ -1,6 +1,6 @@
 'use strict';
 
-const validation = (str) => {
+const multiBracketValidation = (str) => {
   const arr = [];
 
   for (let i = 0; i < str.length; i++) {
@@ -10,15 +10,15 @@ const validation = (str) => {
     if ((str[i] === ')' && arr[arr.length - 1] === '(') 
     || (str[i] === '}' && arr[arr.length - 1] === '{')
     || (str[i] === ']' && arr[arr.length - 1] === '[')) {
-      checker.pop();
+      arr.pop();
     } else if ((str[i] === ')' && arr[arr.length - 1] !== '(') 
     || (str[i] === '}' && arr[arr.length - 1] !== '{')
     || (str[i] === ']' && arr[arr.length - 1] !== '[')) {
       return false;
     }
   }
-  if (checker.length === 0) return true;
-  return false;
+  if (arr.length === 0) return true;
+  else return false;
 };
 
-module.exports = validation;
+module.exports = multiBracketValidation;
