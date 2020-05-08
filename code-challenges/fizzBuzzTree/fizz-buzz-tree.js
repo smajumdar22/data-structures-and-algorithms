@@ -1,28 +1,34 @@
 'use strict';
 
-const fizzbuzzTree = (root) => {
+function fizzBuzzTree(node) {
 
-  if (root === null){
-    return;
-  }
+  if (!node) return 'Must be a valid value';
+  if (typeof node.root.value !== 'number') return 'Need to be a number'
 
- 
-  if (root.value % 3 === 0 && root.value % 5 === 0){
-    root.value = 'fizzbuzz';
-  } else {
-    if (root.value % 3 === 0){
-      root.value = 'fizz';
-    } else if (root.value % 5 === 0){
-      root.value = 'buzz';
-    }else {
-        root.value = root.value.toString();
+  if (typeof node.root.value === 'number') {
+
+    if (node.root.value % 3 === 0 && node.root.value % 5 === 0) {
+      node.root.value = 'FizzBuzz';
+    } else if (node.root.value % 3 === 0) {
+      node.root.value = 'Fizz';
+    } else if (node.root.value % 5 === 0) {
+      node.root.value = 'Buzz';
+    }else{
+      node.root.value = node.root.value.toString();
     }
   }
 
-  fizzbuzzTree(root.left);
-  fizzbuzzTree(root.right);
+  if (node.left) {
 
-  return root;
+    fizzBuzzTree(node.left);
+  }
+  if (node.right) {
+
+    fizzBuzzTree(node.right);
+  }
+  return node;
 };
 
-module.exports = fizzbuzzTree;
+
+
+module.exports = fizzBuzzTree;
