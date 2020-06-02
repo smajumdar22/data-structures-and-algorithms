@@ -1,14 +1,14 @@
 'use strict';
-const getMaxVal=() =>{
+function getMaxVal(){
     if (this.root === null) {
-       throw "Empty tree!";
+       throw "Invalid tree";
     }
     let currNode = this.root;
     
     while (currNode.right !== null) {
        currNode = currNode.right;
     }
-    return currNode.data;
+    return currNode.value;
  }
 
  module.exports = getMaxVal;

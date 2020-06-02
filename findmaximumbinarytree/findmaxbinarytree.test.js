@@ -1,21 +1,21 @@
 'use strict';
 
-const  getMax = require('./findmaximumbinarytree.js')
+const  getMaxVal = require('./findmaximumbinarytree.js')
+const BinarySearchTree = require('./binarysearchtree.js');
 
 let BST = new BinarySearchTree();
-BST.insertRec(10);
-BST.insertRec(15);
-BST.insertRec(5);
-BST.insertRec(50);
-BST.insertRec(3);
-BST.insertRec(7);
-BST.insertRec(12);
-console.log(BST.getMaxVal());
-
+BST.add(10);
+BST.add(15);
+BST.add(5);
+BST.add(50);
+BST.add(3);
+BST.add(7);
+BST.add(12);
+let maxTree = BST.getMaxVal()
 describe('Test', () => {
-    it('Can successfully change node value to FizzBuzz', () => {
+    it('Can find the max node', () => {
         let tree = {value: 15, left:{value: 9, left: {value: 7}}, right:{value: 11, left: {value: 10}}};;
-    
-        expect(tree.getMaxVal).toEqual(15);
+        let maxVal = tree.getMaxVal();
+        expect(maxVal).toEqual(15);
     });
 });
