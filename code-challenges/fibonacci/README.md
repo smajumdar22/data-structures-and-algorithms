@@ -5,7 +5,7 @@
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/401-advanced-javascript-Shubham/Lab01/pull/1)
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/31)
 
 # Challenge Summary
 Write a function to accepts an integer, and returns the nth number in the Fibonacci sequence.

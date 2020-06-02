@@ -5,7 +5,7 @@
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/401-advanced-javascript-Shubham/Lab01/pull/1)
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/39)
 
 # Challenge Summary
 Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects. Ensure that you create your class with the following methods:
