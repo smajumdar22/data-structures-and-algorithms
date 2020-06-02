@@ -1,22 +1,26 @@
 'use strict';
 
+const BinarySearchTree = require('./binarysearchtree.js');
 const fizzBuzzTree = require('./fizz-buzz-tree.js');
 
 
-describe('Test', () => {
-    it('Can successfully change node value to FizzBuzz', () => {
-        let tree = {value: 15, left:{value: 9, left: {value: 7}}, right:{value: 11, left: {value: 10}}};;
-        let testTree = fizzBuzzTree(tree);
-        expect(testTree.value).toEqual('FizzBuzz');
+describe('fizzBuzzTree', () => {
+    it('can change to FizzBuzz', () => {
+
+        let tree = new BinarySearchTree(240);
+        tree.add(100);
+        tree.add(360);
+        fizzBuzzTree(tree);
+        expect(tree.root.value).toBe('FizzBuzz');
+        expect(tree.root.left.root.value).toBe('Buzz');
+        expect(tree.root.right.root.value).toBe('Fizz');
+
     });
-    it('Can successfully change node  to Fizz', () => {
-        let tree = {value: 15, left:{value: 9, left: {value: 7}}, right:{value: 11, left: {value: 10}}};;
-        let testTree = fizzBuzzTree(tree);
-        expect(testTree.left.value).toEqual('Fizz');
-    });
-    it('Can successfully change node value to Buzz', () => {
-        let tree = {value: 15, left:{value: 9, left: {value: 7}}, right:{value: 11, left: {value: 10}}};;
-        let testTree = fizzBuzzTree(tree);
-        expect(testTree.right.left.value).toEqual('Buzz');
+
+    it('can change to String', () => {
+        let tree = new BinarySearchTree(276);
+        fizzBuzzTree(tree);
+        expect(tree.root.value).toBe('276')
+
     });
 });

@@ -1,28 +1,57 @@
 'use strict';
 
-const fizzbuzzTree = (root) => {
+const Node = require('./node.js');
 
-  if (root === null){
-    return;
+const fizzBuzzTree =(root)=> {
+  let replacementStr ='';
+  if(root.val %3 === 0 && root.val %5 === 0 ) replacementStr += 'FizzBuzz';
+  if(root.val %3 === 0) replacementStr += 'Fizz';
+  if(root.val %5 === 0) replacementStr += 'Buzz';
+
+  let newRoot = new Node(replacementStr ? replacementStr : `${root.val}`);
+
+    if (root.left) {
+
+    fizzBuzzTree(root.left);
+  }
+  if (root.right) {
+
+    fizzBuzzTree(root.right);
   }
 
- 
-  if (root.value % 3 === 0 && root.value % 5 === 0){
-    root.value = 'fizzbuzz';
-  } else {
-    if (root.value % 3 === 0){
-      root.value = 'fizz';
-    } else if (root.value % 5 === 0){
-      root.value = 'buzz';
-    }else {
-        root.value = root.value.toString();
-    }
-  }
+  return newRoot;
+}
 
-  fizzbuzzTree(root.left);
-  fizzbuzzTree(root.right);
+// function fizzBuzzTree(node) {
 
-  return root;
-};
+//   if (!node) return 'Must be a valid value';
+//   if (typeof node.root.value !== 'number') return 'Need to be a number'
 
-module.exports = fizzbuzzTree;
+//  let replacementStr = '';
+//   if (typeof node.root.value === 'number') {
+
+//     if (node.val % 3 === 0 && node.val % 5 === 0) {
+//       node.val = 'FizzBuzz';
+//     } else if (node.val % 3 === 0) {
+//       node.val = 'Fizz';
+//     } else if (node.val % 5 === 0) {
+//       node.val = 'Buzz';
+//     }else{
+//       node.val = replacementStr;
+//     }
+//   }
+
+//   if (node.left) {
+
+//     fizzBuzzTree(node.left);
+//   }
+//   if (node.right) {
+
+//     fizzBuzzTree(node.right);
+//   }
+//   return new Node(node);
+// };
+
+
+
+module.exports = fizzBuzzTree;
