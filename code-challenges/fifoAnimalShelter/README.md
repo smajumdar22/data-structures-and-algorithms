@@ -1,11 +1,11 @@
 # Code Challenge: Class 12
 
-## Fibonacci
+## FibonacciFirst-in, First out Animal Shelter.
 
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/40)
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/59)
 
 # Challenge Summary
 Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
