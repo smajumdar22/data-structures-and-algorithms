@@ -1,47 +1,31 @@
 'use strict';
 
-let searchFunction = (arr, x) => { 
-   
-    let start=0, end=arr.length-1; 
-          
-   
-    while (start<=end){ 
-  
-        
-        let mid=Math.floor((start + end)/2); 
-        if (arr[mid]===x) return mid; 
-  
-        else if (arr[mid] < x)  {
-            start = mid + 1; 
-             return start;
-         }
-             
-        else{
-            end = mid - 1; 
-            return end;
-            
-        }
-    } 
-   
-    return -1; 
-} 
+const searchFunction = (arr, value) => {
 
-/* ------------------------------------------------------------------------------------------------
-TESTS
------------------------------------------------------------------------------------------------- */
+  let start = 0;
+  let end = arr.length -1;
+  let mid = 0;
 
-describe("binarysearchvalid", function() {
-     var arr = [4, 8, 15, 16, 23, 42]
-  
-    it("should return the index of an item in a sorted array", function() {
-      expect(searchFunction(arr, 15)).to.equal(4);
-    });
-  });
 
-  describe("binarysearchvainvalid", function() {
-    var arr = [11,22,33,44,55,66,77]
- 
-   it("should return the index of an item in a sorted array", function() {
-     expect(searchFunction(arr, 90)).to.equal(-1);
-   });
- });
+  while (start <= end) {
+     mid = Math.floor((end + start) / 2);
+
+    //mid == value being searched
+    if (arr[mid] === value) {
+
+      return mid;
+
+    }else if (value > arr[mid]) {
+      //move start up one
+      start = mid + 1;
+    }else {
+      //move end by one
+      end = mid - 1;
+    }
+  }
+
+  return -1;
+};
+
+
+module.exports = {searchFunction};
