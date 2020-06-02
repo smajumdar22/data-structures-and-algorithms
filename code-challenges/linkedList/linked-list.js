@@ -1,3 +1,4 @@
+'use strict';
 class Node {
     constructor(value){
       this.value = value
@@ -10,8 +11,20 @@ class Node {
     constructor(){
       this.head = null
       this.size = 0
-      //this.tail = null
     }
+
+  
+    insert (element){
+      if (!this.head){
+        this.head = new Node(element);
+      } else {
+        let initialHead = this.head;
+        this.head = new Node(element);
+        this.head.next = initialHead;
+      }
+      return this.head
+    }
+
     // add to end of list
     append(element){
       if (!this.head){
@@ -26,16 +39,19 @@ class Node {
       this.size++
     }
   
-    insert (element){
-      if (!this.head){
-        this.head = new Node(element);
-      } else {
-        let initialHead = this.head;
-        this.head = new Node(element);
-        this.head.next = initialHead;
+    includes(index) {
+      let current = this.head;
+      //let count = 0;
+      while(current) {
+          if(current.value === index) {
+              console.log(current.data);
+              return true;
+          }
+          //count++;
+          current = current.next;
       }
-      return this.head
-    }
+      return false;
+  }
   
   
     toString (){
@@ -43,10 +59,11 @@ class Node {
       let llString = '';
   
       while (current){
-        llString += `${current.value}`
+
+        console.log(llString += `{${current.value}} ->`);
         current = current.next;
       }
-      return llString;
+      return llString + 'NULL';
     }
   
   }
