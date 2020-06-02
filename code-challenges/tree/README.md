@@ -5,7 +5,8 @@
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/43)
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/61)
+* [Github Actions](https://github.com/smajumdar22/data-structures-and-algorithms/actions)
 
 # Challenge Summary
 Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
