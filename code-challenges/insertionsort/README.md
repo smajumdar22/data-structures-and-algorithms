@@ -5,7 +5,7 @@
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/compare/ll-merge?expand=1)
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/65)
 
 # Challenge Summary
 Write a function called insertionSort which takes an array and sorts it inascending order.
