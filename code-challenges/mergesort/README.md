@@ -5,7 +5,7 @@
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/compare/ll-merge?expand=1)
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/66)
 
 # Challenge Summary
 Merge sort using recursion
