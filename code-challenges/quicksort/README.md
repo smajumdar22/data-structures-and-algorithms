@@ -1,6 +1,6 @@
 # Code Challenge 23: Quick Sort
 
-## Merge sort
+## Quick sort
 
 ### Author: Shubham Majumdar
 
