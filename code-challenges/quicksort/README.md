@@ -1,11 +1,11 @@
 # Code Challenge 23: Quick Sort
 
-## Merge sort
+## Quick Sort
 
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/67)
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/68)
 
 # Challenge Summary
 Quick sort using recursion
@@ -17,6 +17,7 @@ Quick sort using recursion
 
 ## Solution
 ![UML Diagram](whiteboard.jpg)
+![Whiteboard](QuickSortWhiteboard.jpg)
 
 #### How to initialize/run your server app (where applicable)
 * `npm start`
