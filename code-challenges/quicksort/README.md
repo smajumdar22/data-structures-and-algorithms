@@ -1,6 +1,6 @@
-# Code Challenge 23: Quick Sort
+# Code Challenge 24: Quick Sort
 
-## Quick Sort
+## Quick sort
 
 ### Author: Shubham Majumdar
 
