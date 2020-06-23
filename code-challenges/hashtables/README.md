@@ -1,11 +1,11 @@
-# Code Challenge 24: Quick Sort
+# Code Challenge 25: Hash Tables
 
-## Quick Sort
+## Hashtables
 
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/68)
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/69)
 
 # Challenge Summary
 Quick sort using recursion
