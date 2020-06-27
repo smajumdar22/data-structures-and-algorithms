@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1592023878018" clover="3.2.0">
-  <project timestamp="1592023878018" name="All files">
-    <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2" elements="27" coveredelements="27" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
-    <file name="mergesort.js" path="/mnt/c/Users/shmaj/CodeFellows/401/401labs/data-structures-and-algorithms/code-challenges/mergesort/mergesort.js">
-      <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
-      <line num="4" count="20" type="stmt"/>
-      <line num="5" count="20" type="cond" truecount="2" falsecount="0"/>
-      <line num="6" count="36" type="cond" truecount="2" falsecount="0"/>
-      <line num="7" count="16" type="stmt"/>
-      <line num="8" count="16" type="stmt"/>
-      <line num="10" count="20" type="stmt"/>
-      <line num="11" count="20" type="stmt"/>
-      <line num="14" count="20" type="stmt"/>
-      <line num="15" count="12" type="stmt"/>
-      <line num="16" count="20" type="stmt"/>
-      <line num="17" count="16" type="stmt"/>
-      <line num="18" count="20" type="stmt"/>
-      <line num="22" count="44" type="cond" truecount="2" falsecount="0"/>
-      <line num="23" count="24" type="stmt"/>
-      <line num="25" count="20" type="stmt"/>
-      <line num="26" count="20" type="stmt"/>
+<coverage generated="1593295695978" clover="3.2.0">
+  <project timestamp="1593295695978" name="All files">
+    <metrics statements="20" coveredstatements="18" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2" elements="28" coveredelements="25" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1"/>
+    <file name="repeated-word.js" path="/mnt/c/Users/shmaj/CodeFellows/401/401labs/data-structures-and-algorithms/code-challenges/repeatWord/repeated-word.js">
+      <metrics statements="20" coveredstatements="18" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2"/>
       <line num="27" count="20" type="stmt"/>
-      <line num="28" count="20" type="stmt"/>
-      <line num="32" count="1" type="stmt"/>
+      <line num="28" count="47" type="stmt"/>
+      <line num="30" count="20" type="stmt"/>
+      <line num="32" count="20" type="stmt"/>
+      <line num="36" count="5" type="stmt"/>
+      <line num="37" count="5" type="stmt"/>
+      <line num="39" count="5" type="stmt"/>
+      <line num="40" count="21" type="cond" truecount="2" falsecount="0"/>
+      <line num="41" count="20" type="stmt"/>
+      <line num="45" count="20" type="cond" truecount="2" falsecount="0"/>
+      <line num="48" count="4" type="stmt"/>
+      <line num="50" count="4" type="stmt"/>
+      <line num="51" count="4" type="cond" truecount="1" falsecount="1"/>
+      <line num="52" count="0" type="stmt"/>
+      <line num="57" count="0" type="stmt"/>
+      <line num="65" count="16" type="stmt"/>
+      <line num="69" count="1" type="stmt"/>
+      <line num="74" count="1" type="stmt"/>
+      <line num="75" count="1" type="stmt"/>
+      <line num="77" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
