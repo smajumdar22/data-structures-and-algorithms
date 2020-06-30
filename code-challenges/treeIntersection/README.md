@@ -1,11 +1,11 @@
-# Code Challenge:27
+# Code Challenge 27: Tree Intersection
 
 ## Tree Intersection
 
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/61)
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/72)
 * [Github Actions](https://github.com/smajumdar22/data-structures-and-algorithms/actions)
 
 # Challenge Summary
