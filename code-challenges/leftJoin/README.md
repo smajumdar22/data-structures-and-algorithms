@@ -5,7 +5,7 @@
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/72)
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/73)
 
 # Challenge Summary
 Write a function that LEFT JOINs two hashmaps into a single data structure.
