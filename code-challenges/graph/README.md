@@ -5,7 +5,7 @@
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/69)
+* [submission PR](https://github.com/smajumdar22/data-structures-and-algorithms/pull/75)
 
 # Challenge Summary
 AddNode()
