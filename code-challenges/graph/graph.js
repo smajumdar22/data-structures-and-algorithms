@@ -4,26 +4,23 @@ const Node = require('./node.js')
 
 class Graph {
     constructor() {
-        this.adjacents = [];
-        this.AdjList = new Map()
+       
     }
 
 
     addNode(value) {
-        const newNode = new Node(value);
-        this.adjacents.push(newNode);
-
-        this.AdjList.set(value, []);
-        return newNode;
+        if (!this.nodes) this.nodes = [];
+        let node = new Node(value);
+        this.nodes.push(node);
     }
 
-    addEdge(v, w) {
-        // get the list for vertex v and put the 
-        // vertex w denoting edge between v and w 
-        this.AdjList.get(v).push(w);
-
-        //  graph is undirected, add an edge from w to v also 
-        this.AdjList.get(w).push(v);
+    addEdge(originVal, destVal, weight) {
+        for (let i = 0; i < this.nodes.length; i++) {
+            if (this.nodes[i].val === originVal) {
+                this.nodes[i].connections.push({ destVal, weight });
+                return;
+            }
+        }
     }
 
     removeAdjacent(node) {
@@ -35,16 +32,53 @@ class Graph {
     }
 
     getNodes() {
-        return this.adjacents;
+        let vals = [];
+
+        for (let i = 0; i < this.nodes.length; i++) {
+            vals.push(this.nodes[i].val);
+        }
+
+        return vals.length ? vals : null;
     }
 
 
     size() {
-        return this.adjacents.length
+        return this.nodes.length
     }
 
-    getNeighbors(node) {
-        return this.adjacents.indexOf(node) > -1;
+    getNeighbors(val) {
+        let node;
+        let neighbors;
+
+        for (let i = 0; i < this.nodes.length; i++) {
+            if (this.nodes[i].val === val) {
+                node = this.nodes[i];
+            }
+        }
+
+        neighbors = [...node.connections];
+
+        for (let i = 0; i < this.nodes.length; i++) {
+            // iterate through all the other nodes (not A)
+
+            for (let j = 0; j < this.nodes[i].connections.length; j++) {
+                // given some node that is not A
+                // iterate through its connections
+
+                if (this.nodes[i].connections[j].destVal === val) {
+                    // val: B, connections: [{destVal: 'A', weight: 1}]
+                    // destVal ?= val >> 'A' ?= 'A'
+
+                    neighbors.push({
+                        destVal: this.nodes[i].val,
+                        weight: this.nodes[i].connections[j].weight,
+                    });
+                    //continue;
+                }
+            }
+        }
+
+        return neighbors;
     }
 
 }

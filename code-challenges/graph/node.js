@@ -1,7 +1,7 @@
 class Node {
-    constructor(value) {
-        this.value = value;
-        this.adjacentNode = [];
+    constructor(val) {
+        this.val = val;
+        this.connections = [];
     }
 }
 
