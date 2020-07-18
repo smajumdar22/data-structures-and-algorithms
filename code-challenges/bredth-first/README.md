@@ -1,4 +1,4 @@
-# Class 30 Lab: Breadth First Graph
+# Class 31 Code Challenge: Breadth First Graph
 
 ## Breadth First
 
