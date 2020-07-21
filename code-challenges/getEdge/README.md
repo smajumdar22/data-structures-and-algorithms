@@ -16,7 +16,7 @@ Write a function based on the specifications above, which takes in a graph, and 
 ## Approach & Efficiency
 
 ## Solution
-![UML Diagram](whiteboard.jpg)
+![UML Diagram](whiteboard.png)
 
 #### How to initialize/run your server app (where applicable)
 * `npm start`
