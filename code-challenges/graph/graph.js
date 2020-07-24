@@ -8,9 +8,9 @@ class Graph {
     }
 
 
-    addNode(value) {
+    addNode(val) {
         if (!this.nodes) this.nodes = [];
-        let node = new Node(value);
+        let node = new Node(val);
         this.nodes.push(node);
     }
 
