@@ -6,6 +6,8 @@ class Node {
   
     }
   }
+
+  //iterate a linkedlist using a while loop
   
   class LinkedList {
     constructor(){
