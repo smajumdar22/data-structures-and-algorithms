@@ -6,6 +6,8 @@ class Queue {
         this.rear = null;
     }
 
+    //Traversing a queue using while queue.peek
+
     enqueue(val) {
         // adding to the queue
 
