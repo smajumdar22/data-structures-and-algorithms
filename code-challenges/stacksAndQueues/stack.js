@@ -46,6 +46,23 @@ class Stack {
         throw 'NullReferenceException';
     }
 
+    // reverseStack (stack){
+
+    //     let top = this.peek();
+    
+    //     if(stack.isEmpty()){
+    //         return 'Invalid';
+    //     }
+    
+    //     let reverse = [];
+    //     while(!stack.isEmpty()){
+    //     //while(stack.peek()){
+    //         //reverse.push(stack.pop());
+    //         reverse.push(stack.pop());
+    //     }
+    //     return reverse;
+    // }
+
     isEmpty() {
         return !this.top;
     }
