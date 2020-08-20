@@ -1,38 +1,3 @@
-// function remDuplicates(head) {
-//     if(!head)
-//     return head;
-//     let prev = this.head;
-//     let current = this.head.next;
-//     let hash = {};
-//     while(current != null) {
-//         if(!hash[current.value]) {
-//             hash[current.value] = true;
-//         } else {
-//             prev.next = current.next;
-//         }
-//         prev = current;
-//         current = current.next;
-//     }
-//     return head;
-// }
-
-// function remDuplicates(head) 
-// {
-//     while(head !=null){
-//         let curr = this.head;
-//         while(curr !=null){
-//             if(curr.val == curr.next.val){
-//                 curr.next = curr.next.next;
-//             }else{
-//                 curr = curr.next
-//             }
-//         }
-//         curr=curr.next;
-
-//     }
-//     return head;
-// };
-
 class Node {
     constructor(value){
       this.value = value
