@@ -1,3 +1,4 @@
+//Maximum value of a binary search tree
 'use strict';
 function getMaxVal(){
     if (this.root === null) {
@@ -12,3 +13,5 @@ function getMaxVal(){
  }
 
  module.exports = getMaxVal;
+
+ 

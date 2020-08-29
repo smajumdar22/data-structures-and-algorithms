@@ -8,11 +8,6 @@ class Stack {
 
     push(val) {
         let nodeToPush = new Node(val);
-
-        //3:03 -  3:18      ->Stacks
-        //3:18 -  3:25      ->Queue
-        //3:30 -  3:50      ->Linkedlist
-        //3:54 -            ->Tree
         // is the stack empty?
         if (this.isEmpty()) {
             this.top = nodeToPush;

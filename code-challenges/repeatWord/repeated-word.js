@@ -33,31 +33,23 @@ function hash(key, size) {
 function repeatedWord(str) {
     let words = str.split(/[., -!?]/g);
     let hashmap = new Array(words.length * 5);
-
     for (let i = 0; i < words.length; i++) {
         if (words[i] === '') continue;
         let indx = hash(words[i].toLowerCase(), hashmap.length);
-       
-
         // possible collision
-        if (hashmap[indx]) {
-          
+        if (hashmap[indx]) {  
             // collision is actually same key/value
-            let item = hashmap[indx];
-           
+            let item = hashmap[indx];  
             while (item) {
                 if (item.key === words[i].toLowerCase()) return item.key;
                 item = item.next;
             }
-
             // collision is correct collision
-
             hashmap[indx] = {
                 key: words[i].toLowerCase(),
                 next: hashmap[indx],
             };
         }
-
         // no collision
         else {
             hashmap[indx] = { key: words[i].toLowerCase() };

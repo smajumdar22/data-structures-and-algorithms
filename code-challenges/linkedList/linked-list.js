@@ -89,7 +89,26 @@ class Node {
           }
       }
   }
-  
+  remDuplicates(head) {
+
+    if(!head) return ;
+    const set = new Set();
+    const hash = {};
+    hash.next = head;
+    let prev = hash;
+    let curr = head;
+    while (curr) {
+        if (set.has(curr.value)) {
+            prev.next = curr.next;
+        } else {
+            prev = curr;
+            set.add(curr.value);
+        }
+        curr = curr.next;
+    }
+    return hash.next;
+}
+
   }
   
   module.exports = LinkedList;
