@@ -13,9 +13,8 @@
 // return arr;
 // };
 
+//insert element in the middle of the array
 function insertShiftArray(arr,element) { 
-   
-
     // shift all elements one 
     // place to the back until index 
     let mid = Math.floor((arr.length)/2);

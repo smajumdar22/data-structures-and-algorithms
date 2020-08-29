@@ -1,5 +1,6 @@
 'use strict';
 
+//breadth first search tree
 const breadthFirst = (root, arr) => {
   if (!root){
     return 'Root is empty.';

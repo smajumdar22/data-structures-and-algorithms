@@ -12,7 +12,6 @@ class BinaryTree{
         this.root = new Node(root);
     }
 }
-
 const nodeCount = (node, element) => {
     if (!node.value) {
         return;
@@ -30,14 +29,11 @@ const nodeCount = (node, element) => {
         nodeCount(node.right, element);
     }
 };
-
 const checkNode = (node, element, arr) => {
     if (!node.value) {
         return;
     }
-
     if (element[node.value]) arr.push(node.value);
-
     if (node.left) {
         checkNode(node.left, element, arr);
     }
@@ -45,17 +41,14 @@ const checkNode = (node, element, arr) => {
         checkNode(node.right, element, arr);
     }
 };
-
 const treeIntersection = (node1, node2) => {
     if (!node1 || !node2 || node1.constructor.name !== 'Node' || node2.constructor.name !== 'Node') {
         return false;
     }
     const nodesPresent = {};
     const final = [];
-
     nodeCount(node1, nodesPresent);
     checkNode(node2, nodesPresent, final);
-
     return final;
 };
 
