@@ -18,6 +18,7 @@ function insertShiftArray(arr,element) {
     // shift all elements one 
     // place to the back until index 
     let mid = Math.floor((arr.length)/2);
+    let i;
     for (i = arr.length; i > mid; i--) { 
         arr[i] = arr[i - 1]; 
     } 
@@ -31,4 +32,4 @@ let arr =[1,2,3,4,5,6,7];
 // arr.splice(mid,0,88);
 // console.log(arr);\
 
-console.log(insertElement(arr,67));
+console.log(insertShiftArray(arr,67));
